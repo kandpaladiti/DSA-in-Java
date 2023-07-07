@@ -176,3 +176,26 @@ public class count {
         System.out.println("Zero Number: " + zeroNumberCount);
     }
 }
+
+### Date : 7 July 2023
+
+## **Today's Progress**
+
+**Ques 1: Two numbers are entered by the user, x and n. Write a function to find the value of one number raised to the power of another i.e. xn.**
+
+package aditi;
+
+import java.util.Scanner;
+
+public class power {
+    public static double power(double x, double n){
+        double pow = Math.pow(x,n);
+        return pow;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double x = sc.nextDouble();
+        double n = sc.nextDouble();
+        System.out.println(power(x,n));
+    }
+}
