@@ -290,3 +290,98 @@ public class fibonacci {
     }
 }
 ```
+
+## Date : 8 July 2023
+
+### **Today's Progress**
+
+**_Arrays Basics_**
+
+```
+package aditi;
+
+public class Arrays {
+    public static void main(String[] args) {
+        // Both are valid syntax
+        //int[] marks = new int[3];
+        //int marks[] = new int[3];
+        int marks[] = {97,98,95};
+        /* marks[0] = 97; // phy
+        marks[1] = 98; // chem
+        marks[2] = 95; // eng*/
+        // System.out.println(marks); // This will print a garbage value
+        /* System.out.println(marks[0]);
+        System.out.println(marks[1]);
+        System.out.println(marks[2]);*/
+
+        // by loop
+        for (int i=0;i<3;i++){
+            System.out.println(marks[i]);
+        }
+    }
+}
+```
+
+**_Some more about arrays_**
+
+```
+package aditi;
+
+import java.util.Scanner;
+
+public class moreaboutarrays {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int number[] = new int[size];
+
+        //input
+        for (int i=0;i<size;i++){
+            number[i] = sc.nextInt();
+        }
+        //output
+
+        for (int i=0;i<size;i++){
+            System.out.print(number[i] + " ");
+        }
+    }
+}
+```
+
+**_Ques 1: Take an array as input from the user. Search for a given number x and print the index at which it occurs._**
+
+```
+package aditi;
+
+import java.util.Scanner;
+
+public class printindex {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter size of the array: ");
+        int Size = sc.nextInt();
+        int numbers[] = new int[Size];
+
+        //input
+        System.out.println("Enter values in the array: ");
+        for (int i=0;i<Size;i++){
+            numbers[i] = sc.nextInt();
+        }
+        System.out.println("Enter the value of x to be found in the array: ");
+        int x = sc.nextInt();
+        
+        //Indicating variable if value not found
+        boolean found = false;
+        
+        for (int i=0;i<numbers.length;i++){
+            if (numbers[i] == x){
+                System.out.println(x+ " found at index "+i+"."); //output
+                found = true;
+            }
+        }
+        if (!found){
+            System.out.println(x+" is not found in the given array."); //output
+        }
+    }
+}
+```
