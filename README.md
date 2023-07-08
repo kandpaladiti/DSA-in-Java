@@ -27,6 +27,7 @@ public class average {
 
 **Ques 2: Write a function to print the sum of all odd numbers from 1 to n.**
 
+```
 package aditi;
 
 import java.util.Scanner;
@@ -45,9 +46,11 @@ public class sumofoddnumbers {
         System.out.println("Sum of all odd numbers till "+n+" is "+sumOfOddNumbers(n));
     }
 }
+```
 
 **Ques 3: Write a function which takes in 2 numbers and returns the greater of those two.**
 
+```
 package aditi;
 
 import java.util.Scanner;
@@ -71,9 +74,11 @@ public class greatestoftwonumbers {
         greaterNumber(a,b);
     }
 }
+```
 
 **Ques 4: Write a function that takes in the radius as input and returns the circumference of a circle.**
 
+```
 package aditi;
 
 import java.util.Scanner;
@@ -89,9 +94,11 @@ public class circumferenceofcircle {
         System.out.println("Circumference of the circle having radius "+r+" is "+circumference(r));
     }
 }
+```
 
 **Ques 5: Write a function that takes in age as input and returns if that person is eligible to vote or not. A person of age > 18 is eligible to vote.**
 
+```
 package aditi;
 
 import java.util.Scanner;
@@ -114,9 +121,11 @@ public class eligibletovote {
         }
     }
 }
+```
 
 **Ques 6: Write an infinite loop using do while condition.**
 
+```
 package aditi;
 
 import java.util.Scanner;
@@ -130,9 +139,11 @@ public class loop {
         } while (n>=0);
     }
 }
+```
 
 **Ques 7: Write a program to enter the numbers till the user wants and at the end it should display the count of positive, negative and zeros entered.**
 
+```
 package aditi;
 
 import java.util.Scanner;
@@ -178,6 +189,7 @@ public class count {
         System.out.println("Zero Number: " + zeroNumberCount);
     }
 }
+```
 
 ### Date : 7 July 2023
 
