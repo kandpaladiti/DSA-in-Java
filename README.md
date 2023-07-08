@@ -191,12 +191,13 @@ public class count {
 }
 ```
 
-### Date : 7 July 2023
+## Date : 7 July 2023
 
-## **Today's Progress**
+### **Today's Progress**
 
-**Ques 1: Two numbers are entered by the user, x and n. Write a function to find the value of one number raised to the power of another i.e. xn.**
+**_Ques 1: Two numbers are entered by the user, x and n. Write a function to find the value of one number raised to the power of another i.e. xn._**
 
+```
 package aditi;
 
 import java.util.Scanner;
@@ -215,9 +216,11 @@ public class power {
         System.out.println(x+ " to the power "+n+ " is : "+power(x,n));
     }
 }
+```
 
-**Ques 2: Write a function that calculates the Greatest Common Divisor of 2 numbers.**
+**_Ques 2: Write a function that calculates the Greatest Common Divisor of 2 numbers._**
 
+```
 package aditi;
 
 import java.util.Scanner;
@@ -240,9 +243,11 @@ public class GCD {
         System.out.println("GCD of "+a+" and "+b+" is "+ gcdof2numbers(a,b));
     }
 }
+```
 
-other method of doing the above question
+##### _other method of doing the above question_
 
+```
 public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int n1 = sc.nextInt();
@@ -256,11 +261,13 @@ public static void main(String args[]) {
         }
         System.out.println("GCD is : "+ n2);
     }
+```
 
-**Ques 3: Write a program to print Fibonacci series of n terms where n is input by user :
+**_Ques 3: Write a program to print Fibonacci series of n terms where n is input by user :
 0 1 1 2 3 5 8 13 21 ..... 
-In the Fibonacci series, a number is the sum of the previous 2 numbers that came before it.**
+In the Fibonacci series, a number is the sum of the previous 2 numbers that came before it._**
 
+```
 package aditi;
 
 import java.util.Scanner;
@@ -282,3 +289,4 @@ public class fibonacci {
         }
     }
 }
+```
