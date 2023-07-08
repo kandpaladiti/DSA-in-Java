@@ -6,6 +6,7 @@
 
 **Ques 1: Enter 3 numbers from the user & make a function to print their average.** 
 
+```
 package aditi;
 
 import java.util.Scanner;
@@ -22,6 +23,7 @@ public class average {
         System.out.println("Average of "+a+", "+b+" and "+c+" is "+average(a,b,c));
     }
 }
+```
 
 **Ques 2: Write a function to print the sum of all odd numbers from 1 to n.**
 
