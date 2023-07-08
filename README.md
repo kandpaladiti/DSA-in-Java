@@ -1,8 +1,8 @@
 # DSA-in-Java
 
-### Date : 6 July 2023
+## Date : 6 July 2023
 
-## **Today's Progress**
+### **Today's Progress**
 
 **_Ques 1: Enter 3 numbers from the user & make a function to print their average._**
 
