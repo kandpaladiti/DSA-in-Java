@@ -770,7 +770,7 @@ public class FunctionsOnString {
 }
 ```
 
-**_Take an array of Strings input from the user & find the cumulative (combined) length of all those strings._**
+**_Ques 3: Take an array of Strings input from the user & find the cumulative (combined) length of all those strings._**
 
 ```
 package aditi;
