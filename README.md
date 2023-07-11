@@ -812,7 +812,7 @@ import java.util.Scanner;
 public class ReplaceEwithI {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter string: ");
+        System.out.print("Enter string: ");
         String str = sc.next();
         String result = "";
 
@@ -826,6 +826,36 @@ public class ReplaceEwithI {
         }
         System.out.println("Original String: "+str);
         System.out.println("Result String: "+result);
+    }
+}
+```
+
+**_Ques 2: Input an email from the user. You have to create a username from the email by deleting the part that comes after ‘@’. Display that username to the user.
+Example : 
+email = “apnaCollegeJava@gmail.com” ; username = “apnaCollegeJava” 
+email = “helloWorld123@gmail.com”; username = “helloWorld123”_**
+
+```
+package aditi;
+
+import java.util.Scanner;
+
+public class username {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Email: ");
+        String email = sc.next();
+        String UserName = "";
+
+        for (int i=0;i<email.length();i++){
+            if(email.charAt(i) == '@'){
+                break;
+            }
+            else {
+                UserName = UserName + email.charAt(i);
+            }
+        }
+        System.out.println("Username is: " + UserName);
     }
 }
 ```
