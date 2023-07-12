@@ -1088,7 +1088,7 @@ public class count1 {
 }
 ```
 
-**_Write 2 functions => decimalToBinary() & binaryToDecimal() to convert a number from one number system to another._**
+**_Ques 4: Write 2 functions => decimalToBinary() & binaryToDecimal() to convert a number from one number system to another._**
 
 ```
 package aditi;
