@@ -1013,7 +1013,7 @@ public class BitManipulation {
 
 ### **Today's Progress**
 
-**_Write a program to find if a number is a power of 2 or not._**
+**_Ques 1: Write a program to find if a number is a power of 2 or not._**
 
 ```
 package aditi;
@@ -1039,7 +1039,7 @@ public class PowerOf2 {
 }
 ```
 
-**_Write a program to toggle a bit a position = "pos" in a number "n"._**
+**_Ques 2: Write a program to toggle a bit a position = "pos" in a number "n"._**
 
 ```
 package aditi;
