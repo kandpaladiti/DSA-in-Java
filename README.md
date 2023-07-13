@@ -1426,6 +1426,7 @@ public class fibonacciusingrecursion {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter n: ");
         int n = sc.nextInt();
+        System.out.print("Fibonacci Series till "+n+" is: ");
         System.out.print(a+" ");
         System.out.print(b+" ");
         fibonacci(a, b, n-2);
