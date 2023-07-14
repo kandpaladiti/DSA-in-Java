@@ -1597,3 +1597,28 @@ we have to do this until we get the value of T(n-x) = 1 or n-1 = x
 2^(n-1) T(1) + 2^(n-2)+2^(n-3)+.. = 2^n (ignoring -1)
  */
 ```
+
+**_Ques 3: Print reverse of a string._**
+
+```
+package aditi;
+
+import java.security.PublicKey;
+import java.util.Scanner;
+
+public class stringReverse {
+    public static void Reverse_String(String s, int index){
+        if (index == 0){
+            System.out.print(s.charAt(index));
+            return;
+        }
+        System.out.print(s.charAt(index));
+        Reverse_String(s, index-1);
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        Reverse_String(s, s.length()-1);
+    }
+}
+```
