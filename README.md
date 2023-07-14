@@ -1521,7 +1521,7 @@ public class stack_height {
 
 ### **Today's Progress**
 
-**_Ques 1: //Print x^n (stack height = logn)._**
+**_Ques 1: Print x^n (stack height = logn)._**
 
 ```
 package aditi;
