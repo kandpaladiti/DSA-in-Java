@@ -1228,7 +1228,7 @@ public class SelectionSort {
 }
 ```
 
-## Date : 12 July 2023
+## Date : 13 July 2023
 
 ### **Today's Progress**
 
