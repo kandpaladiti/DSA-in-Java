@@ -1874,7 +1874,7 @@ public class sub_sequences {
 //Time Complexity = O(2^n) 
 ```
 
-## Date : 15 July 2023
+## Date : 16 July 2023
 
 ### **Today's Progress**
 
@@ -2042,6 +2042,39 @@ public class tiles {
         System.out.print("Enter m: ");
         int m = sc.nextInt();
         placeTiles(n, m);
+    }
+}
+```
+
+## Date : 17 July 2023
+
+### **Today's Progress**
+
+**_Ques 1: Find the number of ways in which you can invite n people to your party, single or in pairs._**
+
+```
+package aditi;
+
+import java.util.Scanner;
+
+public class waystoinviteguest {
+    public static int callguest(int n){
+        if (n <= 1){
+            return 1;
+        }
+        //single
+        int ways1 = callguest(n-1);
+
+        //pair
+        int ways2 = (n-1)*callguest(n-2);
+
+        return ways1 + ways2;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of guest: ");
+        int n = sc.nextInt();
+        System.out.println(callguest(n));
     }
 }
 ```
