@@ -2119,5 +2119,7 @@ public class subsets {
 
 //Time Complexity = O(2^n)
 ```
-```
-```
+
+#### Backtracking
+
+**Definition:** _Find all possible solutions & use the one you want._
