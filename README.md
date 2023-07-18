@@ -2124,7 +2124,11 @@ public class subsets {
 
 **Definition:** _Find all possible solutions & use the one you want._
 
-**_Ques 3: Print all possible combinations/permutations of a given string._**
+## Date : 18 July 2023
+
+### **Today's Progress**
+
+**_Ques 1: Print all possible combinations/permutations of a given string._**
 
 ```
 package aditi;
