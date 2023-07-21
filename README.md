@@ -2444,3 +2444,10 @@ public class QuickSort {
     }
 }
 ```
+
+_Time Complexity of Quick Sort:_
+
+**Worst Case:** _O(n^2)_ {Worst Case occur when pivot is always the smallest or the largest element & this case will occur when the array is already sorted either in ascending or in descending order.}
+This is because in each level we will run a loop and in 1st level loop runs n times, in 2nd level loop runs n-1 times and so on decreases by 1, and we will go till we not get 1. Now sum of time consumed in all these levels will be as: n+(n-1)+(n-2)+....+1 = (n*(n-1))/2 = n^2 
+
+**Average Case:** _O(nlogn)_ 
