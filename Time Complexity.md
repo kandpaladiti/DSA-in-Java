@@ -4,25 +4,21 @@ Relation between input size & running time (operations)
 
 ***Example:***
 
-***```***
+```
+package aditi;
 
-`	`*Public static void main(String args[]){*
+import java.util.*;
+public class java {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
 
-`		`*Scanner sc = new Scanner(System.in);*
-
-`		`*Int n = sc.nextInt();*
-\*
-
-
-`		`*for(int i = 0; i<n; i++){*
-
-`			`*System.out.println(“hello”);*
-
-`		`*}*
-
-`	`*}*
-
-\```
+        for(int i = 0; i<n; i++){
+            System.out.println("hello");
+        }
+    }
+}
+```
 
 Time complexity is directly proportional to input n, so it is a linear relation.
 
