@@ -3,9 +3,9 @@
 
 Operators are symbols that tell compiler to perform some operations
 
-   *Arithmetic Operators*
+*Arithmetic Operators*
 
- 	    **1.** Binary Operator (+, -, \*, /, %)
+**1.** Binary Operator (+, -, \*, /, %)
 
 **2.** Unary Operator (Increment (++), Decrement (--))
 
