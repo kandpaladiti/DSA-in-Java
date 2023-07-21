@@ -5,9 +5,8 @@ Operators are symbols that tell compiler to perform some operations
 
 *Arithmetic Operators*
 
-**1.** Binary Operator (+, -, \*, /, %)
-
-**2.** Unary Operator (Increment (++), Decrement (--))
+1) Binary Operator (+, -, \*, /, %)
+2) Unary Operator (Increment (++), Decrement (--))
 
 Increment (++)
 
