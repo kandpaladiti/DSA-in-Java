@@ -2502,3 +2502,27 @@ public class OOPS {
     }
 }
 ```
+
+**_Ex 2:_**
+
+```
+package aditi;
+class Student{
+    String name;
+    int age;
+
+    public void printInfo(){
+        System.out.println(this.name);
+        System.out.println(this.age);
+    }
+}
+public class OOPS_EX2 {
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.name = "Aditi";
+        s1.age = 24;
+
+        s1.printInfo();
+    }
+}
+```
