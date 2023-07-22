@@ -2520,7 +2520,36 @@ public class OOPS_EX2 {
     public static void main(String[] args) {
         Student s1 = new Student();
         s1.name = "Aditi";
-        s1.age = 24;
+        s1.age = 19;
+
+        s1.printInfo();
+    }
+}
+```
+
+##### Constructor
+
+**_Ex 2.1: Non-Parameterized Constructor_**
+
+```
+package aditi;
+class Student{
+    String name;
+    int age;
+
+    public void printInfo(){
+        System.out.println(this.name);
+        System.out.println(this.age);
+    }
+    Student(){ //Non-Parameterized constructor
+        System.out.println("Constructor called");
+    }  
+}
+public class OOPS_EX2 {
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.name = "Aditi";
+        s1.age = 19;
 
         s1.printInfo();
     }
