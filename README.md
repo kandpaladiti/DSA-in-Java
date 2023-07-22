@@ -2555,3 +2555,29 @@ public class OOPS_EX2 {
     }
 }
 ```
+
+**_Ex 2.2: Parameterized Constructor_**
+
+```
+package aditi;
+class Student{
+    String name;
+    int age;
+
+    public void printInfo(){
+        System.out.println(this.name);
+        System.out.println(this.age);
+    }
+    Student(String name, int age){ //Parameterized constructor
+        this.name = name;
+        this.age = age;
+    }
+}
+public class OOPS_EX2 {
+    public static void main(String[] args) {
+        Student s1 = new Student("Aditi", 19);
+
+        s1.printInfo();
+    }
+}
+```
