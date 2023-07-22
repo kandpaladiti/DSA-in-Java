@@ -2451,3 +2451,54 @@ _Time Complexity of Quick Sort:_
 This is because in each level we will run a loop and in 1st level loop runs n times, in 2nd level loop runs n-1 times and so on decreases by 1, and we will go till we not get 1. Now sum of time consumed in all these levels will be as: n+(n-1)+(n-2)+....+1 = (n*(n-1))/2 = n^2 
 
 **Average Case:** _O(nlogn)_ 
+
+## Date : 22 July 2023
+
+### **Today's Progress**
+
+#### Object Oriented Programming (OOPS)
+
+**_Ex 1:_**
+
+```
+package aditi;
+class Pen{
+    String color;
+    String type; //ball pen, gel pen.
+
+    public void write(){
+        System.out.println("Writing Something.");
+    }
+    public void printcolour(){
+        System.out.println(this.color);
+    }
+    public void printtype(){
+        System.out.println(this.type);
+    }
+}
+public class OOPS {
+    public static void main(String args[]) {
+        Pen pen1 = new Pen(); //object
+        pen1.color = "blue";
+        pen1.type = "gel";
+        pen1.write();
+
+        Pen pen2 = new Pen();
+        pen2.color = "black";
+        pen2.type = "ball pen";
+
+        Pen pen3 = new Pen();
+        pen3.color = "red";
+        pen3.type = "sketch";
+
+        pen1.printcolour();
+        pen1.printtype();
+
+        pen2.printcolour();
+        pen2.printtype();
+
+        pen3.printcolour();
+        pen3.printtype();
+    }
+}
+```
