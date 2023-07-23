@@ -2736,3 +2736,26 @@ class Equilateraltriangle extends Triangle{
     }
 }
 ```
+
+**_Ex 4.3: Hierarchical Inheritance_**
+
+```
+package aditi;
+
+//3. Hierarchical Inheritance
+class  Shape{
+    public void area(){
+        System.out.println("displays area");
+    }
+}
+class Triangle extends Shape{
+    public void area(int b, int h){
+        System.out.println((1/2)*b*h);
+    }
+}
+class Circle extends Shape{
+    public void area(int r){
+        System.out.println((22/7)*r*r);
+    }
+}
+```
