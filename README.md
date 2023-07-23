@@ -2647,3 +2647,30 @@ public class OOPS_EX3 {
     }
 }
 ```
+
+## Date : 23 July 2023
+
+### **Today's Progress**
+
+**_Ex 3.2: Run-Time Polymorphism (Method Overriding)_**
+
+```
+package aditi;
+
+//3. Hierarchical Inheritance
+class  Shape{
+    public void area(){
+        System.out.println("displays area");
+    }
+}
+class Triangle extends Shape{
+    public void area(int b, int h){
+        System.out.println((1/2)*b*h);
+    }
+}
+class Circle extends Shape{
+    public void area(int r){
+        System.out.println((22/7)*r*r);
+    }
+}
+```
