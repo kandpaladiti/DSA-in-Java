@@ -2695,3 +2695,21 @@ public class OOPS_EX4 {
     }
 }
 ```
+
+**_Ex 4.1: Single Level Inheritance_**
+
+```
+package aditi;
+
+//1. Single Level Inheritance
+class  Shape{
+    public void area(){
+        System.out.println("displays area");
+    }
+}
+class Triangle extends Shape{
+    public void area(int b, int h){
+        System.out.println((1/2)*b*h);
+    }
+}
+```
