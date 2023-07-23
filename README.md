@@ -2713,3 +2713,26 @@ class Triangle extends Shape{
     }
 }
 ```
+
+**_Ex 4.2: Multi Level Inheritance_**
+
+```
+package aditi;
+
+//2. Multi Level Inheritance
+class  Shape{ 
+    public void area(){
+        System.out.println("displays area");
+    }
+}
+class Triangle extends Shape{
+    public void area(int b, int h){
+        System.out.println((1/2)*b*h);
+    }
+}
+class Equilateraltriangle extends Triangle{
+    public void area(int b, int h){
+        System.out.println((1/2)*b*h);
+    }
+}
+```
