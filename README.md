@@ -2674,3 +2674,24 @@ class Circle extends Shape{
     }
 }
 ```
+
+#### Inheritance 
+
+**_Ex 4:_**
+
+```
+package aditi;
+class Shape{ //base class/parent class
+    String color;
+}
+//INHERITANCE
+class Triangle extends Shape{ //subclass/child class
+    //No color is defined here but still no error occurs means Triangle class inherits the property of Shape class.
+}
+public class OOPS_EX4 {
+    public static void main(String[] args) {
+        Triangle t1 = new Triangle();
+        t1.color = "red";
+    }
+}
+```
