@@ -2793,3 +2793,35 @@ public class Bank {
     }
 }
 ```
+
+#### Abstraction
+
+**_Ex 5.1: Abstract Class_**
+
+```
+package aditi;
+//ABSTRACTION
+abstract class Animal{
+    abstract void walk();
+    public void eats(){
+        System.out.println("animal eats");
+    }
+}
+class Horse extends Animal{
+    public void walk() {
+        System.out.println("walks on 4 legs");
+    }
+}
+class Chicken extends Animal{
+    public void walk() {
+        System.out.println("walks on 2 legs");
+    }
+}
+public class OOPS_EX5 {
+    public static void main(String[] args) {
+        Horse h1 = new Horse();
+        h1.walk();
+        h1.eats();
+    }
+}
+```
