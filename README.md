@@ -3145,6 +3145,9 @@ public class linked_list_collection_framework {
 
         list.remove(2);
         System.out.println(list);
+
+        list.add(1,"my");
+        System.out.println(list);
     }
 }
 ```
