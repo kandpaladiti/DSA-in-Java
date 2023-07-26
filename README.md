@@ -2959,7 +2959,7 @@ class Array_List {
         int size = list.size();
         System.out.println(size);
 
-        //llops
+        //loops
         for (int i = 0; i< list.size(); i++){
             System.out.print(list.get(i)+" ");
         }
@@ -2976,7 +2976,7 @@ class Array_List {
 
 ### **Today's Progress**
 
-**_Ques 1: Scratch Implementation on linked List (add and remove elements from first and last of the linked list, printing linked list and getting size of linked list.)_**
+**_Ques 1: Scratch Implementation of linked List (add and remove elements from first and last of the linked list, printing linked list and getting size of linked list.)_**
 
 ```
 package aditi;
@@ -3147,4 +3147,63 @@ public class linked_list_collection_framework {
         System.out.println(list);
     }
 }
+```
+
+**_Ques 3: Scratch Implementation (Adding and deleting element in the middle of the linked list)_**
+
+```
+//add element in the middle
+    public void addInMiddle(int index, String data){
+        if(index > size || index<0){
+            System.out.println("INVALID INDEX VALUE");
+            return;
+        }
+        size++;
+        Node newNode = new Node(data);
+        if (head==null || index ==0){
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
+        Node currNode = head;
+        for(int i=1; i<size; i++){
+            if (i==index){
+                Node nextNode = currNode.next;
+                currNode.next = newNode;
+                newNode.next = nextNode;
+                break;
+            }
+            currNode = currNode.next;
+        }
+    }
+
+    //delete element from the middle
+    public void deleteFromMiddle(int index) {
+        if (index >= size || index < 0) {
+            System.out.println("INVALID INDEX VALUE");
+            return;
+        }
+
+        size--;
+
+        if (head == null) {
+            System.out.println("Linked list is empty.");
+            return;
+        }
+
+        if (index == 0) {
+            head = head.next;
+            return;
+        }
+
+        Node currNode = head;
+        for (int i = 1; i < size; i++) {
+            if (i == index) {
+                Node nodeToDelete = currNode.next;
+                currNode.next = nodeToDelete.next;
+                break;
+            }
+            currNode = currNode.next;
+        }
+    }
 ```
