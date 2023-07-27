@@ -3215,7 +3215,7 @@ public class linked_list_collection_framework {
 
 ### **Today's Progress**
 
-**_Ques 1: Reversing of Linked List by Iterative method._**
+**_Ques 1: Reversing of Linked List by Iterative Method._**
 
 ```
 package aditi;
@@ -3306,6 +3306,94 @@ public class Reversing_LL {
         list.printList();
 
         list.reverseIterate();
+        list.printList();
+    }
+}
+```
+
+**_Ques 2: Reversing of Linked List by Recursive Method._**
+
+```
+package aditi;
+
+public class Reversing_LL {
+    Node head;
+    private int size;
+
+    Reversing_LL(){
+        this.size = 0;
+    }
+    class Node{
+        int data;
+        Node next;
+
+        Node(int data){
+            this.data = data;
+            this.next = null;
+            size++;
+        }
+    }
+
+    //add - first
+    public void addfirst(int data){
+        Node newNode = new Node(data);
+        if(head == null){
+            head = newNode;
+            return;
+        }
+        newNode.next = head;
+        head = newNode;
+    }
+
+    //add - last
+    public void addlast(int data){
+        Node newNode = new Node(data);
+        if(head == null){
+            head = newNode;
+            return;
+        }
+        Node currNode = head;
+        while(currNode.next != null){
+            currNode = currNode.next;
+        }
+        currNode.next = newNode;
+
+    }
+
+    //print
+    public void printList(){
+        if (head == null){
+            System.out.println("List is empty");
+            return;
+        }
+        Node currNode = head;
+        while(currNode != null){
+            System.out.print(currNode.data+" -> ");
+            currNode = currNode.next;
+        }
+        System.out.println("NULL");
+    }
+    
+    public Node reverseRecursive(Node head){
+        if (head == null || head.next == null){
+            return head;
+        }
+        Node newHead = reverseRecursive(head.next);
+        head.next.next = head;
+        head.next = null;
+
+        return newHead;
+    }
+
+    public static void main(String[] args) {
+        Reversing_LL list = new Reversing_LL();
+        list.addfirst(1);
+        list.addlast(2);
+        list.addlast(3);
+        list.addlast(4);
+        list.printList();
+
+        list.head = list.reverseRecursive(list.head);
         list.printList();
     }
 }
