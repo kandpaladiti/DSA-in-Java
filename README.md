@@ -3500,3 +3500,42 @@ class Solution {
     }
 }
 ```
+
+## Date : 28 July 2023
+
+### **Today's Progress**
+
+**_Ques 1: Given head, the head of a linked list, determine if the linked list has a cycle in it._** (Leetcode Problem) [https://leetcode.com/problems/linked-list-cycle/]
+
+```
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
+public class Solution {
+    public boolean hasCycle(ListNode head) {
+        if(head == null){
+            return false;
+        }
+        ListNode hare = head; //fast
+        ListNode turtle = head; //slow
+
+        while(hare != null && hare.next != null){
+            hare = hare.next.next;
+            turtle = turtle.next;
+
+            if(hare == turtle){
+                return true;
+            }
+        }
+        return false;
+    }
+}
+```
