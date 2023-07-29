@@ -3830,7 +3830,7 @@ public class Queue_using_Array {
 }
 ```
 
-**_Queue 6: Implementation of Circular Queue using Arrays._**
+**_Ques 6: Implementation of Circular Queue using Arrays._**
 
 ```
 package aditi;
@@ -3916,7 +3916,7 @@ public class Circular_Queue {
 }
 ```
 
-**_Queue 7: Implementation of Queue using Linked List._**
+**_Ques 7: Implementation of Queue using Linked List._**
 
 ```
 package aditi;
@@ -3982,6 +3982,29 @@ public class Queue_using_Linked_list {
         q.add(4);
         q.add(5);
 
+
+        while (!q.isEmpty()) {
+            System.out.println(q.peek());
+            q.remove();
+        }
+    }
+}
+```
+
+**_Ques 8: Implementation of Queue using Java Collection Framework._**
+
+```
+package aditi;
+import java.util.*;
+public class Queue_using_Java_Collection_Framework {
+    public static void main(String[] args) {
+        //Queue<Integer> q = new LinkedList<>(); //Interfaces k object nahi bnte, Queue is interface and linked list is class
+        Queue<Integer> q = new ArrayDeque<>();
+        q.add(1);
+        q.add(2);
+        q.add(3);
+        q.add(4);
+        q.add(5);
 
         while (!q.isEmpty()) {
             System.out.println(q.peek());
