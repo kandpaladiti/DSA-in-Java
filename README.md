@@ -4560,7 +4560,7 @@ public class Diameter_of_a_tree {
 //Time Complexity - O(n^2)
 ```
 
-**_Ques 10: Optimised Approach for diameter of a tree._**
+**_Ques 10: Optimized Approach for diameter of a tree._**
 
 ```
 package aditi;
