@@ -4758,21 +4758,21 @@ public class sum_of_nodes_at_kth_level {
 
 
 **What is a BST?**
-It is a Binary Tree, have all properties of a binary tress and also have some of its own properties.
-1. Value of left subtree nodes < Value of root node
+_It is a Binary Tree, have all properties of a binary tress and also have some of its own properties._
+_1. Value of left subtree nodes < Value of root node
 2. Value of right subtree nodes > Value of root node
-3. Left & Right subtrees are also BST with no duplicates. (by default) If duplicates will exist then it will be clearly specified in the question.
+3. Left & Right subtrees are also BST with no duplicates. (by default) If duplicates will exist then it will be clearly specified in the question._
 
 **Special Property:**
-Inorder Traversal of BST gives a (increasing) sorted sequence.
+_Inorder Traversal of BST gives a (increasing) sorted sequence._
 
-BST makes search efficient.
+_BST makes search efficient._
 
-**Time Complexity -** O(H), where H = height of tree. Time complexity will be logn in only perfectly balanced trees.
-worst Case Time Complexity - O(N), N = no. of nodes, such trees are called "Skewed Trees".
+**Time Complexity -** _O(H), where H = height of tree. Time complexity will be logn in only perfectly balanced trees.
+worst Case Time Complexity - O(N), N = no. of nodes, such trees are called "Skewed Trees"._
 
 **Strategy:**
-Most problems will be solved using recursion i.e., by dividing into subproblems & making recursive calls on subtrees.
+_Most problems will be solved using recursion i.e., by dividing into subproblems & making recursive calls on subtrees._
 
 
 **_Ques 1: Creating & inserting elements in Binary Search Tree._**
@@ -4821,6 +4821,79 @@ public class Binary_Search_Tree_BST {
         }
         inorder(root);
         System.out.println();
+    }
+}
+
+//Time Complexity - O(H)
+```
+
+**_Ques 2: Searching elements in Binary Search Tree._**
+
+```
+package aditi;
+
+public class Search_in_BST {
+    static class Node {
+        int data;
+        Node left;
+        Node right;
+
+        Node(int data){
+            this.data = data;
+        }
+    }
+    public static Node insert(Node root, int val){
+        if(root == null){
+            root = new Node(val);
+            return root;
+        }
+        if (root.data > val){
+            //left subtree
+            root.left = insert(root.left, val);
+        }
+        else {
+            root.right = insert(root.right, val);
+        }
+        return root;
+    }
+    public static void inorder(Node root){
+        if (root == null){
+            return;
+        }
+        inorder(root.left);
+        System.out.print(root.data + " ");
+        inorder(root.right);
+    }
+    public static boolean search(Node root, int key){
+        if(root == null){
+            return false;
+        }
+        if (root.data > key){ //left subtree
+            return search(root.left, key);
+        }
+        else if (root.data == key){
+            return true;
+        }
+        else { //right subtree
+            return search(root.right, key);
+        }
+    }
+    public static void main(String[] args) {
+        int values[] = {8, 5, 3, 1, 4, 6, 10, 11, 14};
+        Node root = null;
+
+        for(int i = 0; i < values.length; i++){
+            root = insert(root, values[i]);
+        }
+        inorder(root);
+        System.out.println();
+
+        if(search(root, 7)) {
+            System.out.println("found");
+        }
+        else {
+            System.out.println("not found");
+        }
     }
 }
 
