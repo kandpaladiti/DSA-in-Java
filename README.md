@@ -4899,3 +4899,17 @@ public class Search_in_BST {
 
 //Time Complexity - O(H)
 ```
+
+**Delete a node -**
+_Case 1: No child(Leaf Node)
+Delete Node & Return Null to parent_
+
+_Case 2: One Child
+Delete Node & Replace with child node_
+
+_Case 3: Two Children
+Replace value with inorder successor
+Delete the node for inorder successor
+(Inorder successor - left most in right subtree) & (inorder successor always have 0 or 1 child in BST)_
+
+
