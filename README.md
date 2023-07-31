@@ -4756,6 +4756,7 @@ public class sum_of_nodes_at_kth_level {
 
 ### **Today's Progress**
 
+
 **What is a BST?**
 It is a Binary Tree, have all properties of a binary tress and also have some of its own properties.
 1. Value of left subtree nodes < Value of root node
@@ -4772,3 +4773,56 @@ worst Case Time Complexity - O(N), N = no. of nodes, such trees are called "Skew
 
 **Strategy:**
 Most problems will be solved using recursion i.e., by dividing into subproblems & making recursive calls on subtrees.
+
+
+**_Ques 1: Creating & inserting elements in Binary Search Tree._**
+
+```
+package aditi;
+
+public class Binary_Search_Tree_BST {
+    static class Node {
+        int data;
+        Node left;
+        Node right;
+
+        Node(int data){
+            this.data = data;
+        }
+    }
+    public static Node insert(Node root, int val){
+        if(root == null){
+            root = new Node(val);
+            return root;
+        }
+        if (root.data > val){
+            //left subtree
+            root.left = insert(root.left, val);
+        }
+        else {
+            root.right = insert(root.right, val);
+        }
+        return root;
+    }
+    public static void inorder(Node root){
+        if (root == null){
+            return;
+        }
+        inorder(root.left);
+        System.out.print(root.data + " ");
+        inorder(root.right);
+    }
+    public static void main(String[] args) {
+        int values[] = {5, 1, 3, 4, 2, 7};
+        Node root = null;
+
+        for(int i = 0; i < values.length; i++){
+            root = insert(root, values[i]);
+        }
+        inorder(root);
+        System.out.println();
+    }
+}
+
+//Time Complexity - O(H)
+```
