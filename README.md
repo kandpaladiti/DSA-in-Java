@@ -4751,3 +4751,24 @@ public class sum_of_nodes_at_kth_level {
     }
 }
 ```
+
+## Date : 31 July 2023
+
+### **Today's Progress**
+
+**What is a BST?**
+It is a Binary Tree, have all properties of a binary tress and also have some of its own properties.
+1. Value of left subtree nodes < Value of root node
+2. Value of right subtree nodes > Value of root node
+3. Left & Right subtrees are also BST with no duplicates. (by default) If duplicates will exist then it will be clearly specified in the question.
+
+**Special Property:**
+Inorder Traversal of BST gives a (increasing) sorted sequence.
+
+BST makes search efficient.
+
+**Time Complexity -** O(H), where H = height of tree. Time complexity will be logn in only perfectly balanced trees.
+worst Case Time Complexity - O(N), N = no. of nodes, such trees are called "Skewed Trees".
+
+**Strategy:**
+Most problems will be solved using recursion i.e., by dividing into subproblems & making recursive calls on subtrees.
