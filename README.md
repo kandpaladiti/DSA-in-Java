@@ -5142,7 +5142,7 @@ public class Root_to_leaf_path {
 
 #### Hashing
 
-**_Ques 1: HashSet in Java (Creating a HashSet and its operations)_**
+**_Ques 1: HashSet in Java (Creating a HashSet and its basic operations)_**
 
 _It is a very efficient data structure due to its Time Complexity.
 It takes constant time of O(1) for Insert/Add, Search/Contains, Delete/Remove._
@@ -5190,6 +5190,64 @@ public class Hashing_HashSet {
         while (it.hasNext()){
             System.out.println(it.next());
         }
+    }
+}
+```
+
+**_Ques 2: HashMap in Java (Creating a HashMap and its basic operations)_**
+
+```
+package aditi;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class Hashing_HashMap {
+    public static void main(String[] args) {
+        //Country(String), Population(Integer)
+        //Creation
+        HashMap<String, Integer> map = new HashMap<>();
+
+        //Insertion
+        map.put("India", 125);
+        map.put("US", 30);
+        map.put("China", 150);
+
+        //Print
+        System.out.println(map);
+
+        map.put("China", 180);
+        System.out.println(map);
+
+        //SIze
+        System.out.println("Size of map is : "+map.size());
+
+        //Search
+        if (map.containsKey("China")){
+            System.out.println("Key is Present in the Map");
+        }
+        else {
+            System.out.println("Key is Not Present in the Map");
+        }
+
+        System.out.println(map.get("China")); //value if exist
+        System.out.println(map.get("Indo")); //null if not exist
+
+        //Iteration (1)
+        for (Map.Entry<String, Integer> e : map.entrySet()) {
+            System.out.println(e.getKey());
+            System.out.println(e.getValue());
+        }
+
+        //Iteration (2)
+        Set<String> keys = map.keySet();
+        for (String key : keys){
+            System.out.println(key + " " + map.get(key));
+        }
+
+        //Delete
+        map.remove("China");
+        System.out.println(map);
     }
 }
 ```
