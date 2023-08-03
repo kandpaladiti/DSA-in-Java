@@ -5577,3 +5577,14 @@ public class Subarray_sum_equal_to_k {
     }
 }
 ```
+
+## Date : 03 August 2023
+
+### **Today's Progress**
+
+#### Trie Data Structure
+
+_Also known as Prefix Tree, Digital Search Tree and Retrieval Tree. It is used to retrieve data._
+_1.	Tries are used for fast search O(L), where L = Length of word.
+2.	Root is an empty node.
+3.	Prefix is not repeated._
