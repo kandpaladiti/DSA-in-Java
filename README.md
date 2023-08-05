@@ -5917,6 +5917,8 @@ public class LongestWordWithAllPrefixes {
 
 ### **Today's Progress**
 
+#### Graphs
+
 **_Ques 1: Creating graph using Adjacency List (Un-directed, Un-weighted)_**
 
 ```
@@ -5960,6 +5962,54 @@ public class Graphs_UD_UW {
             if (i != graph[1].size()-1) {
                 System.out.print(", ");
             }
+        }
+    }
+}
+```
+
+**_Ques 2: Creating graph using Adjacency List (Un-directed, Weighted)_**
+
+```
+package aditi;
+
+import java.util.ArrayList;
+
+public class Graphs_UD_W {
+    static class Edge{
+        int source;
+        int destination;
+        int weight;
+
+        public Edge(int src, int dest, int wt){
+            this.source = src;
+            this.destination = dest;
+            this.weight = wt;
+        }
+    }
+    public static void creatGraph(ArrayList<Edge> graph[]){
+        for (int i=0; i< graph.length; i++){
+            graph[i] = new ArrayList<Edge>();
+        }
+        graph[0].add(new Edge(0, 2, 2));
+
+        graph[1].add(new Edge(1, 2, 10));
+        graph[1].add(new Edge(1, 3, 0));
+
+        graph[2].add(new Edge(2, 0, 2));
+        graph[2].add(new Edge(2, 1, 10));
+        graph[2].add(new Edge(2, 3, -1));
+
+        graph[3].add(new Edge(3, 1, 0));
+        graph[3].add(new Edge(3, 2, -1));
+    }
+    public static void main(String[] args) {
+        int V = 4;
+        ArrayList<Edge> graph[] = new ArrayList[V];
+        creatGraph(graph);
+        //Print 2's neighbours
+        for (int i=0; i< graph[2].size(); i++){
+            Edge e = graph[2].get(i);
+            System.out.println(e.destination + "," + e.weight);
         }
     }
 }
