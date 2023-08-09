@@ -6381,6 +6381,7 @@ public class all_paths_from_Source_to_Target {
         }
     }
 
+    //Time Complexity - O(V^V)
     public static void printAllPath(ArrayList<Edge> graph[], boolean visited_array[], int current, String path, int target) {
         if (current == target) {
             System.out.println(path);
@@ -6409,6 +6410,65 @@ public class all_paths_from_Source_to_Target {
         creatGraph(graph);
         int source = 0, target = 5;
         printAllPath(graph, new boolean[V], source, "0", target);
+    }
+}
+```
+
+## Date : 09 August 2023
+
+### **Today's Progress**
+
+**_Ques 1: Cycle Detection (Directed Graph)_**
+
+```
+package aditi;
+import java.util.*;
+
+public class Cycle_Detection {
+    static class Edge{
+        int source;
+        int destination;
+
+        public Edge(int src, int dest){
+            this.source = src;
+            this.destination = dest;
+        }
+    }
+    public static boolean isCycleDirected(ArrayList<Edge> graph[], boolean visited_array[], int current, boolean recursion[]){
+        visited_array[current] = true;
+        recursion[current] = true;
+        for (int i=0; i<graph[current].size(); i++){
+            Edge e = graph[current].get(i);
+            if (recursion[e.destination] = true){ //cycle
+                return true;
+            }
+            else if(!visited_array[e.destination]){
+                if(isCycleDirected(graph, visited_array, e.destination, recursion)) {
+                    return true;
+                }
+            }
+        }
+        recursion[current] = false;
+        return false;
+    }
+    public static void creatGraph(ArrayList<Edge> graph[]){
+        for (int i=0; i< graph.length; i++){
+            graph[i] = new ArrayList<Edge>();
+        }
+        graph[0].add(new Edge(0, 2));
+
+        graph[1].add(new Edge(1, 0));
+
+        graph[2].add(new Edge(2, 3));
+
+        graph[3].add(new Edge(3, 0));
+    }
+    public static void main(String[] args) {
+        int V = 4;
+
+        ArrayList<Edge> graph[] = new ArrayList[V];
+        creatGraph(graph);
+        System.out.println(isCycleDirected(graph, new boolean[V], 0, new boolean[V]));
     }
 }
 ```
