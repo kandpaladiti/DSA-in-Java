@@ -6468,7 +6468,28 @@ public class Cycle_Detection {
 
         ArrayList<Edge> graph[] = new ArrayList[V];
         creatGraph(graph);
-        System.out.println(isCycleDirected(graph, new boolean[V], 0, new boolean[V]));
+        boolean visited_array[] = new boolean[V];
+        boolean recursion[] = new boolean[V];
+        for (int i=0; i<V; i++){
+            if (!visited_array[i]){
+                boolean isCycle = isCycleDirected(graph, visited_array, 0, recursion);
+                if (isCycle){
+                    System.out.println(isCycle);
+                    break;
+                }
+            }
+        }
     }
 }
 ```
+
+## Date : 10 August 2023
+
+### **Today's Progress**
+
+#### TOPOLOGICAL SORTING
+_It is a linear order of vertices such that every directed edge u-> v, the vertex u comes before v in the order._
+_1. It works for Directed Acyclic Graph (DAG).
+2. Directed Acyclic Graph (DAG) is a directed graph with no cycles.
+3. Topological sorting is used only for DAGs (not for non-DAGs)
+4. It shows how dependency works._
