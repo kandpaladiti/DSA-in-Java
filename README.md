@@ -6959,7 +6959,6 @@ public class Prims_Algorithm {
     }
     public static void main(String[] args) {
         int V = 4;
-
         ArrayList<Edge> graph[] = new ArrayList[V];
         creatGraph(graph);
         primsAlgo(graph);
