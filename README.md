@@ -6968,3 +6968,10 @@ public class Prims_Algorithm {
 
 //Time Complexity - ElogE
 ```
+
+## Date : 19 August 2023
+
+### **Today's Progress**
+
+#### Strongly Connected Component
+_SCC is a component in which we can reach every vertex of the component from every other vertex in that component._
