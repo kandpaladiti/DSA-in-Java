@@ -6965,4 +6965,6 @@ public class Prims_Algorithm {
         primsAlgo(graph);
     }
 }
+
+//Time Complexity - ElogE
 ```
