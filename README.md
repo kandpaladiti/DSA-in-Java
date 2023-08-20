@@ -6950,7 +6950,7 @@ public class Prims_Algorithm {
 
                 for (int i=0; i<graph[current.node].size(); i++){
                     Edge e = graph[current.node].get(i);
-                    if(!visited[e.destination]){
+                    if(!visited[e.destination]) {
                         pq.add(new Pair(e.destination, e.weight));
                     }
                 }
