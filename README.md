@@ -6942,7 +6942,7 @@ public class Prims_Algorithm {
         boolean visited[] = new boolean[graph.length];
         pq.add(new Pair(0,0));
         int mstCost = 0;
-        while (!pq.isEmpty()){
+        while (!pq.isEmpty()) {
             Pair current = pq.remove();
             if (!visited[current.node]){
                 visited[current.node] = true;
