@@ -1,6 +1,6 @@
 # DSA-in-Java
 
-| Date |                                                Challenge                                              				   |
+| Date |                                                Progress                                               				   |
 |:----:|:---------------------------------------------------------------------------------------------------------------------:|
 |  6 July 2023   | [**_Ques 1: Enter 3 numbers from the user & make a function to print their average._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/average.java)                                  				   |
 |  6 July 2023   | [**_Ques 2: Write a function to print the sum of all odd numbers from 1 to n._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/sumofoddnumbers.java)                                     				  |
