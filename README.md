@@ -6,6 +6,9 @@
 |  6 July 2023   | [**_Ques 2: Write a function to print the sum of all odd numbers from 1 to n._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/sumofoddnumbers.java)                                     				  |
 |  6 July 2023   | [**_Ques 3: Write a function which takes in 2 numbers and returns the greater of those two._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/greatestoftwonumbers.java)                                  				   |
 |  6 July 2023   | [**_Ques 4: Write a function that takes in the radius as input and returns the circumference of a circle._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/circumferenceofcircle.java)                                     				  |
+|  6 July 2023   | [**_Ques 5: Write a function that takes in age as input and returns if that person is eligible to vote or not. A person of age > 18 is eligible to vote._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/eligibletovote.java)                                     				  |
+|  6 July 2023   | [**_Ques 6: Write an infinite loop using do while condition._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/loop.java)                                  				   |
+|  6 July 2023   | [**_Ques 7: Write a program to enter the numbers till the user wants and at the end it should display the count of positive, negative and zeros entered._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/count.java)                                     				  |
 
 
 
