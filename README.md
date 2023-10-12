@@ -1,5 +1,12 @@
 # DSA-in-Java
 
+| Date |                                                Challenge                                              				   |
+|:----:|:---------------------------------------------------------------------------------------------------------------------:|
+|  6 July 2023   | [**_Ques 1: Enter 3 numbers from the user & make a function to print their average._**]([https://www.hackerrank.com/challenges/30-hello-world](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/average.java))                                  				   |
+|                | [**_Ques 2: Write a function to print the sum of all odd numbers from 1 to n._**]([https://www.hackerrank.com/challenges/30-data-types](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/sumofoddnumbers.java))                                     				  |
+
+
+
 ## Date : 6 July 2023
 
 ### **Today's Progress**
