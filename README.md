@@ -4,6 +4,8 @@
 |:----:|:---------------------------------------------------------------------------------------------------------------------:|
 |  6 July 2023   | [**_Ques 1: Enter 3 numbers from the user & make a function to print their average._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/average.java)                                  				   |
 |  6 July 2023   | [**_Ques 2: Write a function to print the sum of all odd numbers from 1 to n._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/sumofoddnumbers.java)                                     				  |
+|  6 July 2023   | [**_Ques 3: Write a function which takes in 2 numbers and returns the greater of those two._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/greatestoftwonumbers.java)                                  				   |
+|  6 July 2023   | [**_Ques 4: Write a function that takes in the radius as input and returns the circumference of a circle._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/circumferenceofcircle.java)                                     				  |
 
 
 
