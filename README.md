@@ -9,6 +9,9 @@
 |  6 July 2023   | [**_Ques 5: Write a function that takes in age as input and returns if that person is eligible to vote or not. A person of age > 18 is eligible to vote._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/eligibletovote.java)                                     				  |
 |  6 July 2023   | [**_Ques 6: Write an infinite loop using do while condition._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/loop.java)                                  				   |
 |  6 July 2023   | [**_Ques 7: Write a program to enter the numbers till the user wants and at the end it should display the count of positive, negative and zeros entered._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/count.java)                                     				  |
+|  7 July 2023   | [**_Ques 8: Two numbers are entered by the user, x and n. Write a function to find the value of one number raised to the power of another i.e. xn._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/power.java)                                  				   |
+|  7 July 2023   | [**_Ques 9: Write a function that calculates the Greatest Common Divisor of 2 numbers._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/GCD.java)                                     				  |
+|  7 July 2023   | [**_Ques 10: Write a program to print Fibonacci series of n terms where n is input by user : 0 1 1 2 3 5 8 13 21 ..... In the Fibonacci series, a number is the sum of the previous 2 numbers that came before it._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/fibonacci.java)                                     				  |
 
 
 
