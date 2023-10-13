@@ -18,6 +18,14 @@
 |  8 July 2023   | [**_Ques 12:Take an array of names as input from the user and print them on the screen._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/arrayofnames.java)                                     				  |
 |  8 July 2023   | [**_Ques 13: Find the maximum & minimum number in an array of integers._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/maxMinNumbers.java)                                     				  |
 |  8 July 2023   | [**_Ques 14: Take an array of numbers as input and check if it is an array sorted in ascending order. Eg : { 1, 2, 4, 7 } is sorted in ascending order.  {3, 4, 6, 2} is not sorted in ascending order._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/sortedascendingornot.java)                                  				   |
+|  9 July 2023   | [**_2D Arrays Basics_**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/TwoDArrays.java)                                     				  |
+|  9 July 2023   | [**_Ques 15: Take a matrix as input from the user. Search for a given number x and print the indices at which it occurs._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/searchForX.java)                                  				   |
+
+|  10 July 2023   | [**_Ques 9: Write a function that calculates the Greatest Common Divisor of 2 numbers._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/GCD.java)                                     				  |
+|  10 July 2023   | [**_Ques 10: Write a program to print Fibonacci series of n terms where n is input by user : 0 1 1 2 3 5 8 13 21 ..... In the Fibonacci series, a number is the sum of the previous 2 numbers that came before it._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/fibonacci.java)                                     				  |
+|  10 July 2023   | [**_Ques 9: Write a function that calculates the Greatest Common Divisor of 2 numbers._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/GCD.java)                                     				  |
+|  10 July 2023   | [**_Ques 10: Write a program to print Fibonacci series of n terms where n is input by user : 0 1 1 2 3 5 8 13 21 ..... In the Fibonacci series, a number is the sum of the previous 2 numbers that came before it._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/fibonacci.java)                                     				  |
+|  10 July 2023   | [**_Ques 9: Write a function that calculates the Greatest Common Divisor of 2 numbers._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/GCD.java)    
 
 
 
@@ -27,86 +35,9 @@
 
 
 
-## Date : 9 July 2023
 
-### **Today's Progress**
 
-**_Ques 1: 2D Arrays Basics_**
 
-```
-package aditi;
-import java.util.Scanner;
-public class TwoDArrays {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number of rows: ");
-        int rows = sc.nextInt();
-        System.out.println("Enter number of cols: ");
-        int cols = sc.nextInt();
-
-        int [][] numbers = new int[rows][cols];
-
-        //input
-        //rows
-        System.out.println("Enter elements of 2D Array: ");
-        for (int i=0;i<rows;i++){
-            //columns
-            for (int j=0;j<cols;j++){
-                numbers[i][j]=sc.nextInt();
-            }
-        }
-        //output
-        System.out.println("2D Array is: ");
-        for (int i=0;i<rows;i++) {
-            for (int j = 0; j < cols; j++) {
-                System.out.print(numbers[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
-}
-```
-
-**_Ques 2: Take a matrix as input from the user. Search for a given number x and print the indices at which it occurs._**
-
-```
-package aditi;
-
-import java.util.Scanner;
-
-public class searchForX {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number of rows: ");
-        int rows = sc.nextInt();
-        System.out.println("Enter number of cols: ");
-        int cols = sc.nextInt();
-
-         int [][] matrix = new int[rows][cols];
-
-         //input
-        //rows
-        System.out.println("Enter elements of Matrix: ");
-        for (int i=0;i<rows;i++){
-            //columns
-            for (int j=0;j<cols;j++){
-                matrix[i][j] = sc.nextInt();
-            }
-        }
-        System.out.println("Enter number to be searched in the matrix: ");
-        int x = sc.nextInt();
-
-        for (int i=0;i<rows;i++) {
-            for (int j = 0; j < cols; j++) {
-                //compare
-                if (matrix[i][j] == x){
-                    System.out.print(x+ " found at the location ("+i+ ","+j+") in the matrix.");
-                }
-            }
-        }
-    }
-}
-```
 
 ## Date : 10 July 2023
 
