@@ -1,7 +1,7 @@
 # DSA-in-Java
 
-| Date |                                                Progress                                               				   |
-|:----:|:---------------------------------------------------------------------------------------------------------------------:|
+|      Date      |                                                     Progress                                                   				   |
+|:--------------:|:---------------------------------------------------------------------------------------------------------------------:|
 |  6 July 2023   | [**_Ques 1: Enter 3 numbers from the user & make a function to print their average._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/average.java)                                  				   |
 |  6 July 2023   | [**_Ques 2: Write a function to print the sum of all odd numbers from 1 to n._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/sumofoddnumbers.java)                                     				  |
 |  6 July 2023   | [**_Ques 3: Write a function which takes in 2 numbers and returns the greater of those two._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/greatestoftwonumbers.java)                                  				   |
@@ -30,6 +30,13 @@
 |  11 July 2023  | [**_String Builder and some basic operations of String Builder_**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/String_Builder.java)                                     				  |
 |  11 July 2023  | [**_Ques 21:Reversing a String._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/reversing_string.java)                                     				  |
 |  11 July 2023  | [**_Bit Manipulation Operation_**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/BitManipulation.java)                                     				  |
+|  12 July 2023  | [**_Ques 22: Write a program to find if a number is a power of 2 or not._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/PowerOf2.java)                                     				  |
+|  12 July 2023  | [**_Ques 23: Write a program to toggle a bit a position = "pos" in a number "n"._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/toggle.java)                                     				  |
+|  12 July 2023  | [**_Ques 24: Write a program to count the number of 1’s in a binary representation of the number._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/count1.java)                                     				  |
+|  12 July 2023  | [**_Ques 25: Write 2 functions => decimalToBinary() & binaryToDecimal() to convert a number from one number system to another._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/conversion.java)                                     				  |
+|  12 July 2023  | [**_Bubble Sort_**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/BubbleSort.java)                                     				  |
+|  12 July 2023  | [**_Selection Sort_**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/SelectionSort.java)                                     				  |
+
 
  
 
@@ -38,224 +45,7 @@
 
 
 
-## Date : 12 July 2023
 
-### **Today's Progress**
-
-**_Ques 1: Write a program to find if a number is a power of 2 or not._**
-
-```
-package aditi;
-
-import java.util.Scanner;
-
-public class PowerOf2 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number: ");
-        int number = sc.nextInt();
-
-        while (number%2==0){
-            number = number/2;
-        }
-        if (number == 1){
-            System.out.println("Power of 2");
-        }
-        else{
-            System.out.println("Not power of 2");
-        }
-    }
-}
-```
-
-**_Ques 2: Write a program to toggle a bit a position = "pos" in a number "n"._**
-
-```
-package aditi;
-
-import java.util.Scanner;
-
-public class toggle {
-    public static void main(String[] args) {
-        //input
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        int n = sc.nextInt();
-        System.out.print("Enter position: ");
-        int pos = sc.nextInt();
-        //bitmask
-        int bitmask = 1<<pos;
-        //XOR Operation
-        int newnumber = bitmask ^ n;
-        System.out.println("Number after being toggled: "+newnumber);
-    }
-}
-```
-
-**_Ques 3: Write a program to count the number of 1’s in a binary representation of the number._**
-
-```
-package aditi;
-
-import java.util.Scanner;
-
-public class count1 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter your desired number: ");
-        int n = sc.nextInt();
-        int count = 0;
-
-        while (n>0){
-            if ((n & 1)==1){
-                count++;
-            }
-            n=n>>1;
-        }
-        System.out.println("Number of 1s: "+count);
-    }
-}
-```
-
-**_Ques 4: Write 2 functions => decimalToBinary() & binaryToDecimal() to convert a number from one number system to another._**
-
-```
-package aditi;
-
-import java.util.Scanner;
-
-public class conversion {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a decimal number: ");
-        int decimalNumber = sc.nextInt();
-        long Binary_Number = decimalToBinary(decimalNumber);
-        System.out.println("Binary representation of "+decimalNumber+" is: "+Binary_Number);
-        System.out.print("Enter a binary number: ");
-        long binaryNumber = sc.nextLong();
-        int Decimal_Number = binaryToDecimal(binaryNumber);
-        System.out.println("Decimal representation of "+binaryNumber+" is: "+Decimal_Number);
-    }
-        public static long decimalToBinary(int decimalNumber){
-          long binary = 0;
-          long placeValue = 1;
-
-           while(decimalNumber > 0){
-              binary += (decimalNumber%2) * placeValue;
-              decimalNumber /= 2;
-              placeValue *=10;
-          }
-          return binary;
-      }
-
-      public static int binaryToDecimal(long binaryNumber){
-        int decimal = 0;
-        int power = 0;
-
-        while (binaryNumber > 0){
-            int digit = (int) (binaryNumber%10);
-            decimal += digit * (int) Math.pow(2, power);
-            binaryNumber /= 10;
-            power++;
-        }
-        return decimal;
-      }
-}
-```
-
-#### Sorting Techniques
-
-**_Bubble Sort_**
-
-```
-package aditi;
-
-import java.util.Scanner;
-
-public class BubbleSort {
-    public static void printarray(int arr[]) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-    }
-    public static void main(String[] args) {
-        //int [] arr = {7, 8, 3, 1, 2};
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter size of array: ");
-        int size = sc.nextInt();
-        int [] arr = new int[size];
-
-        //array input
-        System.out.print("Enter elements of the array: ");
-        for (int i=0;i< size;i++){
-            arr[i] = sc.nextInt();
-        }
-
-        //Time Complexity of Bubble Sort is: O(n^2)
-
-        //bubble sort
-        for (int i=0; i<arr.length -1; i++){
-            for (int j =0; j< arr.length-i-1; j++){
-                if (arr[j] > arr[j+1]){
-                    //swap
-                    int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
-                }
-            }
-        }
-        System.out.print("Sorted array is: ");
-        printarray(arr); //function call
-    }
-}
-```
-
-**_Selection Sort_**
-
-```
-package aditi;
-
-import java.util.Scanner;
-
-public class SelectionSort {
-    public static void printarray(int arr[]) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-    }
-    public static void main(String[] args) {
-//        int [] arr = {7, 8, 3, 1, 2};
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter size of array: ");
-        int size = sc.nextInt();
-        int [] arr = new int[size];
-
-        //array input
-        System.out.print("Enter elements of the array: ");
-        for (int i=0;i< size;i++){
-            arr[i] = sc.nextInt();
-        }
-        
-        //Time Complexity of Selection Sort is: O(n^2)
-        
-        //selection sort
-        for (int i=0; i<arr.length -1; i++){
-            int smallest = i;
-            for (int j =i+1; j< arr.length; j++){
-                if (arr[smallest] > arr[j]){
-                    smallest = j;
-                }
-            }
-                //swap
-                int temp = arr[smallest];
-                arr[smallest] = arr[i];
-                arr[i] = temp;
-        }
-        System.out.print("Sorted array is: ");
-        printarray(arr); //function call
-    }
-}
-```
 
 ## Date : 13 July 2023
 
