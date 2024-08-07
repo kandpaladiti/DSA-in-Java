@@ -51,7 +51,7 @@
 |  14 July 2023  | [**_Ques 37: Check if an array is sorted or not (Strictly Increasing)._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/sorted_strictly_increasing.java)                                     				  |
 |  14 July 2023  | [**_Ques 38: Move all 'x' to the end of the string._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/allXatlast.java)                                     				  |
 |  15 July 2023  | [**_Ques 39: Remove duplicates in a string._**](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/deleteduplicate.java)                                     				  |
-|  15 July 2023  | [**_Ques 2: Print all the subsequences of a string._**  (IMPORTANT)](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/sub_sequences.java)                                     				  |
+|  15 July 2023  | [**_Ques 40: Print all the subsequences of a string._**  (IMPORTANT)](https://github.com/kandpaladiti/DSA-in-Java/blob/main/Java%20Programs/sub_sequences.java)                                     				  |
 
 
 
